@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    notebook:
+        build: .
+        volumes:
+            - ./projet:/home/jovyan/projet
+        ports:
+            - 8888:8888
+        
